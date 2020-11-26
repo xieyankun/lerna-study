@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "pre-commit": "lint-staged",
+    "storybook": "cross-env NODE_ENV=development start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "lint": "eslint --ext vue,js,ts packages/**/src"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
